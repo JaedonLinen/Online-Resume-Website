@@ -1,2 +1,24 @@
+:root {
+  --color-primary: #445a4d;
+  --color-secondary: #2a3b42;
+  --color-background: #212226;
+  --color-text: #779e7f;
+  --color-accent: #b8520a;
+}
 
+/* ===== Reset / Normalize ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent vertical scroll */
+}
 

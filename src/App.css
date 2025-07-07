@@ -1,1 +1,35 @@
+.website {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-primary);
+}
 
+/* Sidebar stays on the left */
+.sidebar {
+  width: 200px;
+  background-color: var(--color-background);
+  color: var(--color-accent);
+  padding: 1rem;
+  flex-shrink: 0;
+}
+
+/* Scroll container scrolls horizontally */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden; /* <- add this just to be safe */
+}
+
+/* Each section/page */
+.scroll-container section {
+  scroll-snap-align: start;
+  flex: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
