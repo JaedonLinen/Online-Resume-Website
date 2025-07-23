@@ -24,7 +24,6 @@ function App() {
 
   return (
     <div className='website'>
-      <Sidebar />
       <div className="scroll-container" ref={scrollRef}>
         <section><Introduction /></section>
         <section><Introduction /></section>
