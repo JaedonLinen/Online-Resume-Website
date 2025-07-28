@@ -1,3 +1,8 @@
+.contact-section{
+    width: 40vw;
+    height: 100vh;
+    background-color: var(--color-background);
+}
 .con-title{
     padding: 40px 0px 0px 40px;
     color: whitesmoke;

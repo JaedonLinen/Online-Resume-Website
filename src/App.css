@@ -27,7 +27,6 @@
 .scroll-container section {
   scroll-snap-align: start;
   flex: none;
-  width: 100vw;
   height: 100vh;
   box-sizing: border-box;
   overflow: hidden;

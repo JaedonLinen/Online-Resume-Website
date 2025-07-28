@@ -72,8 +72,8 @@
 }
 
 .intro-images button:hover{
-    background-color: #ffffffaf;
-    color: rgba(0, 0, 0, 0.596);
+    background-color: var(--color-accent);
+    color: whitesmoke;
     transition: 0.6s;
 }
 
