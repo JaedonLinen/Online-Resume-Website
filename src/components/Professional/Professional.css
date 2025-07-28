@@ -1,0 +1,156 @@
+.pro-title{
+    padding: 40px 0px 0px 40px;
+    color: whitesmoke;
+}
+.pro-title-text{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.timeline-wrapper{
+    max-width: 100vw;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeline{
+    height: .12rem;
+    padding: 0 4rem;
+    list-style-type: none;
+    background-color: var(--color-accent);
+
+    --scale: 1;
+    display: flex;
+    cursor: pointer;
+}
+.timeline li{
+    position: relative;
+    width: 20rem;
+}
+.timeline li::before,
+.timeline li::after,
+.timeline li .event-title,
+.data{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(var(--scale));
+}
+.timeline li::before{
+    top: 1rem;
+    content: "";
+
+    display: inline-block;
+    width: 0.12rem;
+    height: 1rem;
+    background-color: whitesmoke;
+}
+.timeline li:hover:before{
+    background-color: var(--color-text);
+    
+}
+.timeline li:nth-child(even)::before{
+    top: -1rem;
+}
+.timeline li::after{
+    content: attr(data-date);
+    top: -3.4rem;
+    color: var(--color-accent);
+    font-size: 0.8rem;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.timeline li:nth-child(odd)::after{
+    top: 3.4rem;
+}
+.timeline li .event-title{
+    top: 2.5rem;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    white-space: pre;
+    opacity: 0.2;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.timeline li:nth-child(odd) >.event-title{
+    top: -2.4rem;
+}
+.timeline li:hover .event-title{
+    font-size: 1.2rem;
+    opacity: 1;
+    transition: all 0.3s;
+    color: white;
+}
+.data{
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: whitesmoke;
+    color: var(--color-primary);
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.15s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.timeline li:hover .data{
+    background-color: var(--color-text);
+    --scale: 1.2;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.data.show{
+    width: 22rem;
+    height: 22rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-image: linear-gradient(45deg, var(--color-text), var(--color-accent));
+    z-index: 100;
+    box-shadow: 0  .1rem .4rem #0004;
+}
+
+.data h3{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+.data p,
+.data small,
+.data h3{
+    background-color: rgba(255, 255, 255, 0.308);
+    padding: .78rem;
+    border-radius: 1rem;
+    box-shadow: 0  .1rem .8rem #0004;
+}
+.data p,
+.data small,
+.data span{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.data span{
+    background-color: rgba(255, 255, 255, 0.308);
+    width: 25%;
+    padding: .60rem;
+    border-radius: 1rem;
+    text-align: center;
+    align-self: center;
+    box-shadow: 0  .1rem .8rem #0004;
+    transition: all 0.15s;
+}
+.data span:hover{
+    background-color: rgba(199, 14, 14, 0.548);
+    color: whitesmoke;
+    transition: all 0.3s;
+}

@@ -1,0 +1,15 @@
+.personal-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-text);
+}
+.pers-title{
+    padding: 40px 0px 0px 40px;
+    color: var(--color-background);
+}
+.pers-title-text{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
