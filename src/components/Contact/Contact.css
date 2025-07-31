@@ -5,11 +5,89 @@
 }
 .con-title{
     padding: 40px 0px 0px 40px;
-    color: whitesmoke;
 }
-.con-title-text{
+.con-title p{
+    font-weight: 300;
+    color: rgba(245, 245, 245, 0.418);
+}
+.con-title-text,
+.con-attn-subheader,
+.resume{
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
     font-style: normal;
+}
+.con-attn{
+    padding: 0px 0px 0px 80px;
+    margin-top: 15vh;
+}
+.con-attn-header{
+    color: var(--color-text);
+    font-size: 4.5vw;
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.con-attn-header span{
+    color: var(--color-accent);
+}
+.con-attn-subheader{
+    color: whitesmoke;
+    font-size: 0.9vw;
+}
+.social-icons{
+    padding: 50px 0px 0px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.social-icons a{
+    width: 100px;
+}
+.clickable-icon{
+    z-index: 2;
+}
+.clickable-icon > *{
+    color: rgb(240, 233, 224);
+    font-size: 80px;
+    transition: all 0.15s;
+}
+.icon-resume-wrapper{
+    display: flex;
+    align-items: center;
+    transition: all 0.15s;
+    width: 80px;
+}
+.clickable-icon > *:hover{
+    color: var(--color-accent);
+    cursor: pointer;
+    font-size: 82px;
+    transition: all 0.3s;
+}
+.icon-resume-wrapper:hover .clickable-icon > * {
+  color: var(--color-accent);
+  cursor: pointer;
+  font-size: 82px;
+  transition: all 0.3s;
+}
+.resume {
+    transform: translateX(-200px);
+    color: var(--color-accent);
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.15s,
+    transform 0.5s; 
+}
+
+.resume p{
+    width: 12vw;
+}
+.icon-resume-wrapper:hover .resume {
+  transform: translateX(10px);
+  font-size: 1vw;
+  transition:
+    transform 0.7s ease,
+    opacity 0.5s ease 0.3s;  /* 0.5s delay before opacity starts */
+  opacity: 1;
 }
