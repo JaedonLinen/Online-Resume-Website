@@ -22,7 +22,9 @@ function LedgerPro() {
                 <img src={grad} alt="" />
             </div>
             <div className="project-desc">
-                <p className="project-desc-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi voluptatum iure dolore maxime quos? Vitae quasi fugit quos molestias velit eveniet odio maxime rerum possimus nesciunt ex, autem, provident maiores!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quae odio ut nostrum, alias obcaecati eum corrupti nobis accusamus impedit repudiandae ab ipsa illum. Non modi ab tempora repellat deleniti.</p>
+                <div className="project-desc-text-container">
+                    <p className="project-desc-text">From January to May 2025, I led full-stack development on Ledger Pro, a user-friendly accounting platform designed to match enterprise tools. Key features allowed users to chart accounts, post transactions, run trial balances, and generate income and balance sheets with built-in financial analysis. I built a secure Python API connected to a PostgreSQL database hosted on Render to handle account creation, password checks, and transaction journalization. Ledger Pro is fast, secure, and built for real-world use.</p>
+                </div>
                 <div className="framework-section">
                     <p>Framework :</p>
                     <div className="framework-logos-section">

@@ -34,7 +34,7 @@ function Personal() {
   const handleMouseEnterSection2 = () => {
     hoverTimer.current = setTimeout(() => {
       scrollToSection(section2Ref, 'section2');
-    }, 500);
+    }, 400);
   };
 
   const handleMouseLeaveSection2 = () => {

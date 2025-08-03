@@ -29,35 +29,31 @@ function Professional() {
               <div className={`data ${event1 ? 'show' : ''}`}>
                 <h3>Graduated High School</h3>
                 <small>May 05, 2021</small>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum a nam qui explicabo commodi at maiores eveniet veniam, incidunt unde. Minus adipisci officiis asperiores hic exercitationem? Eos consectetur sequi sint.</p>
-                <span className='close' onClick={setAllFalse}>Close</span>
+                <p>I earned my high school diploma from Newton College & Career Academy in 2021, laying a strong foundation for my academic and professional journey. I enrolled at Kennesaw State University to pursue higher education.</p>
               </div>
             </li>
             <li data-date="Aug 16, 2021" onClick={() => {setAllFalse(),setevent2(!event2)}}>
               <span className='event-title'>Freshman Year at KSU</span>
               <div className={`data ${event2 ? 'show' : ''}`}>
-                <h3>Freshman Year at KSU</h3>
+                <h3>Freshman Year at KSU!</h3>
                 <small>Aug 16, 2021</small>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum a nam qui explicabo commodi at maiores eveniet veniam, incidunt unde. Minus adipisci officiis asperiores hic exercitationem? Eos consectetur sequi sint.</p>
-                <span className='close' onClick={setAllFalse}>Close</span>
+                <p>Began freshman year at Kennesaw State University and declared Software Engineering as my major to pursue a career in tech. I chose to major in Software Engineering to align with my passion for technology and problem-solving.</p>
               </div>
             </li>
             <li data-date="May 08, 2023" onClick={() => {setAllFalse(),setevent3(!event3)}}>
               <span className='event-title'>IT Data Analyst Internship</span>
               <div className={`data ${event3 ? 'show' : ''}`}>
                 <h3>IT Data analyst Intern at RNDC</h3>
-                <small>May 08, 2023 - Aug 07, 2023 </small>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas dolores eius vel, voluptatum, vero ipsam dolorum corporis, natus molestias distinctio vitae? Commodi iure eaque veritatis modi explicabo accusantium dignissimos eveniet.</p>
-                <span className='close' onClick={setAllFalse}>Close</span>
+                <small>May 08, 2023 - Aug 07, 2023 ... 3mo </small>
+                <p>My first real work experience was an IT Data Analyst internship at Republic National Distributing Company (RNDC) during the summer of 2023. I worked with millions of supplier and consumer records to support the company's data integrity in cloud migration efforts. I also developed a Python program to convert complex nested JSON files into structured Excel reports for easier analysis.</p>
               </div>
             </li>
             <li data-date="May 06, 2024" onClick={() => {setAllFalse(),setevent4(!event4)}}>
               <span className='event-title'>Digital Manufacturing Analyst Co-op</span>
               <div className={`data ${event4 ? 'show' : ''}`}>
                 <h3>Digital Manufacturing Analyst Co-op</h3>
-                <small>May 06, 2024 - Aug 05, 2023 </small>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas dolores eius vel, voluptatum, vero ipsam dolorum corporis, natus molestias distinctio vitae? Commodi iure eaque veritatis modi explicabo accusantium dignissimos eveniet.</p>
-                <span className='close' onClick={setAllFalse}>Close</span>
+                <small>May 06, 2024 - Aug 08, 2025 ... 1yr 3mo </small>
+                <p>This was my second work experience, a Digital Manufacturing IT Internship at Smurfit WestRock starting in May 2024. I worked on cloud-based data solutions using AWS Glue, DMS, and Redshift, helping transform and migrate data models. I also developed reporting tools in Oracle APEX and supported QA testing for Tulip applications, improving both data visibility and application reliability.</p>
               </div>
             </li>
             <li data-date="May 08, 2025" onClick={() => {setAllFalse(),setevent5(!event5)}}>
@@ -65,8 +61,7 @@ function Professional() {
               <div className={`data ${event5 ? 'show' : ''}`}>
                 <h3>Graduated undergraduate at KSU</h3>
                 <small>May 08, 2025</small>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas dolores eius vel, voluptatum, vero ipsam dolorum corporis, natus molestias distinctio vitae? Commodi iure eaque veritatis modi explicabo accusantium dignissimos eveniet.</p>
-                <span className='close' onClick={setAllFalse}>Close</span>
+                <p>I graduated from Kennesaw State University with a Bachelor’s degree in Software Engineering and a minor in Computer Science. During my undergraduate studies, I completed internships at RNDC and Smurfit WestRock, gaining hands-on experience in data analytics, cloud computing, and application development. These roles helped solidify my technical foundation and prepared me for a career in data and software engineering.</p>
               </div>
             </li>
           </ul>
