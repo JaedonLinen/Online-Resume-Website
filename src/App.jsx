@@ -1,8 +1,9 @@
 import './App.css';
 import { useEffect, useRef } from 'react';
 import Sidebar from './components/Sidebar/sidebar';
+import Landing from './components/Landing/Landing';
 import Introduction from './components/Introduction/Introduction';
-import Professional from './components/Professional/Professional';
+import Education from './components/Education/Education';
 import Personal from './components/Personal/Personal';
 import Contact from './components/Contact/Contact';
 
@@ -28,8 +29,9 @@ function App() {
   return (
     <div className='website'>
       <div className="scroll-container" ref={scrollRef}>
+        <section><Landing /></section>
         <section><Introduction /></section>
-        <section><Professional /></section>
+        <section><Education /></section>
         <section><Personal /></section>
         <section><Contact /></section>
       </div>

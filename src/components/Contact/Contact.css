@@ -20,7 +20,7 @@
 }
 .con-attn{
     padding: 0px 0px 0px 80px;
-    margin-top: 15vh;
+    margin-top: 9vh;
 }
 .con-attn-header{
     color: var(--color-text);
@@ -51,7 +51,7 @@
 }
 .clickable-icon > *{
     color: rgb(240, 233, 224);
-    font-size: 80px;
+    font-size: 70px;
     transition: all 0.15s;
 }
 .icon-resume-wrapper{

@@ -51,6 +51,11 @@
     font-style: normal;
 }
 
+.intro-desc-text span{
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
 .intro-images{
     width: 50vw;
     height: 100vh;

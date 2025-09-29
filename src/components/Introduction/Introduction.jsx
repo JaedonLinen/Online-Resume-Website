@@ -39,7 +39,7 @@ function Introduction() {
           <p className="name">Jaedon Linen</p>
         </div>
         <div className="intro-desc">
-          <p className="intro-desc-text">I'm a recent Software Engineering graduate from Kennesaw State University with experience in data engineering and full-stack development. I’ve built data pipelines using AWS and Redshift, created reporting tools with Oracle APEX, and developed a finance app using Python and PostgreSQL. I’m skilled in Python, SQL, React, and tools like Databricks and Azure DevOps. Now that I’ve graduated, I’m looking for a full-time role where I can use my skills to help solve real-world problems.</p>
+          <p className="intro-desc-text">I'm a recent Software Engineering graduate from Kennesaw State University with experience in <span>big data analytics</span>, <span>data engineering</span>, and <span>full-stack development</span>. I’m looking for a full-time role where I can use my skills to help solve real-world problems.</p>
         </div>
       </div>
       <div className="intro-images">

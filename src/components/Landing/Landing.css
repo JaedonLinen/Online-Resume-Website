@@ -1,0 +1,72 @@
+.Landing-section{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+}
+.landing-bkg, 
+.landing-content, 
+.landing-title{
+    grid-area: 1/1;
+}
+.landing-content{
+    z-index: 100;
+    margin-top: 35vh;
+    margin-left: 20vw;
+}
+
+.landing-title{
+    z-index: 100;
+    padding: 40px 0px 0px 40px;
+    color: whitesmoke;
+}
+.pro-title-text{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.title-landing{
+    opacity: 0;
+    color: white;
+    font-size: 5rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    animation: animation 1s ease-in forwards;
+}
+
+.subtitle-landing{
+    opacity: 0;
+    margin-top: -18px;
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    animation: animation 2s ease-in forwards;
+    animation-delay: 1s; /* waits 1 second before starting */
+}
+
+.directions-landing{
+    opacity: 0;
+    color: white;
+    font-size: 0.8rem;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    animation: animation 2s ease-in forwards;
+    animation-delay: 3s; /* waits 1 second before starting */
+}
+
+@keyframes animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
