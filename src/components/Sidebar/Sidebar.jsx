@@ -1,16 +1,19 @@
 import './Sidebar.css'
+import { MdHomeFilled } from "react-icons/md";
 
 function Sidebar() {
   return (
     <nav className='sidebar'>
-        <h3>Jaedon Linen</h3>
-        <ul>
-            <li><p>Home</p></li>
+      <div className="nav-container">
+        <ul className='nav-section'>
+            <li><MdHomeFilled size={20}/></li>
             <li><p>Introduction</p></li>
-            <li><p>Professional Experience</p></li>
-            <li><p>Personal Experience</p></li>
+            <li><p>Education</p></li>
+            <li><p>Experience</p></li>
+            <li><p>Initiatives</p></li>
             <li><p>Contact</p></li>
         </ul>
+      </div>
     </nav>
   )
 }

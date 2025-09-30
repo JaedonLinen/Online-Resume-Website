@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Education.css'
+import ksu from '../../assets/ksu.svg';
 
 function Education() {
 
@@ -7,6 +8,16 @@ function Education() {
     <div className='professional-section'>
         <div className="pro-title">
           <p className="pro-title-text">Education</p>
+        </div>
+        <div className="education-panels">
+          <div className="e-panel-1">
+            <img src={ksu} alt="" />
+          </div>
+          <div className="e-panel-2">
+            <div className="college-name">
+              <p>Kennesaw State University</p>
+            </div>
+          </div>
         </div>
     </div>
   )
