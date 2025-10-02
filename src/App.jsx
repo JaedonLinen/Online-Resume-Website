@@ -9,6 +9,7 @@ import Contact from './components/Contact/Contact';
 
 function App() {
   const scrollRef = useRef(null);
+  const sectionRefs = useRef([]); // store refs for each section
 
   useEffect(() => {
     const el = scrollRef.current;
@@ -22,19 +23,28 @@ function App() {
     };
 
     el.addEventListener('wheel', handleWheel, { passive: false });
-
     return () => el.removeEventListener('wheel', handleWheel);
   }, []);
 
+  // 🔑 Function to scroll to section
+  const scrollToSection = (index) => {
+    sectionRefs.current[index]?.scrollIntoView({ 
+      behavior: "smooth", 
+      inline: "start" 
+    });
+  };
+
   return (
     <div className='website'>
+      {/* Pass scroll function into Sidebar */}
+      <Sidebar onNavigate={scrollToSection} />
+
       <div className="scroll-container" ref={scrollRef}>
-        <section><Sidebar /></section>
-        <section><Landing /></section>
-        <section><Introduction /></section>
-        <section><Education /></section>
-        <section><Personal /></section>
-        <section><Contact /></section>
+        <section ref={el => sectionRefs.current[0] = el}><Landing /></section>
+        <section ref={el => sectionRefs.current[1] = el}><Introduction /></section>
+        <section ref={el => sectionRefs.current[2] = el}><Education /></section>
+        <section ref={el => sectionRefs.current[4] = el}><Personal /></section>
+        <section ref={el => sectionRefs.current[5] = el}><Contact /></section>
       </div>
     </div>
   );

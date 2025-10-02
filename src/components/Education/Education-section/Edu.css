@@ -1,0 +1,42 @@
+.pro-title{
+    padding: 40px 0px 0px 40px;
+    color: whitesmoke;
+}
+.pro-title-text{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.education-panels{
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: calc(100vh - 150px);
+    width: 100vw;
+}
+.education-panels *{
+    margin: 0;
+    height: 100%;
+    width: 47vw;
+}
+.e-panel-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.e-panel-1 img{
+    width: 30vw;
+}
+.college-name{
+    height: 10%;
+}
+.college-name p{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3rem;
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
