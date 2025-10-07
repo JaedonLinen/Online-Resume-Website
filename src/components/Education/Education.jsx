@@ -6,7 +6,6 @@ import Frameworks from './Frameworks-section/Frameworks';
 
 function Education() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isSwitching, setIsSwitching] = useState(false); // prevent spam clicks
 
   const sections = [
     <Edu key="edu" />,
@@ -15,13 +14,9 @@ function Education() {
   ];
 
   const handleSwitch = (index) => {
-    if (index === activeIndex || isSwitching) return; // ignore if same or already switching
-    setIsSwitching(true);
-
-    setTimeout(() => {
+    if (index === activeIndex) return; // ignore if same or already switching
       setActiveIndex(index);
       setIsSwitching(false);
-    }, 1000); // 1 second delay
   };
 
   return (

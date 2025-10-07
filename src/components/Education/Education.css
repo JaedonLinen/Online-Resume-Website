@@ -43,3 +43,11 @@
     background-color: var(--color-accent);
     transition: 0.3s all;
 }
+@keyframes fade-out {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
