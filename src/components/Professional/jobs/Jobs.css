@@ -1,0 +1,72 @@
+.job-content{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.position-title-container{
+    background-color: var(--color-background-faded);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.position-title-container p{
+    color: var(--color-background);
+    font-size: 3rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+.position-desc-container{
+    width: 100%;
+    height: 80%;
+}
+.job-details{
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+.left-details, .right-details{
+    width: 50%;
+    height: 10%;
+}
+.job-key-projects{
+    width: 100%;
+    height: 60%;
+}
+.job-details-text, .key-projects-title, .concepts-text, .key-project-name, .key-project-desc{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.job-details-text{
+    margin-top: 20px;
+    margin-left: 20%;
+    font-weight: 600;
+}
+.job-details-text span{
+    font-weight: 300;
+}
+.concepts-text{
+    margin-left: 20%;
+    font-weight: 600;
+}
+.key-projects-title{
+    font-weight: 600;
+    padding: 5px 5px 5px 0px;
+    padding-left: 10%;
+    border-bottom: 1px solid var(--color-accent);
+}
+.key-project-container{
+    margin-top: 20px;
+}
+.key-project-name{
+    padding-left: 15%;
+    font-weight: 600;
+}
+.key-project-desc{
+    padding-left: 10%;
+    font-size: 0.9rem;
+}

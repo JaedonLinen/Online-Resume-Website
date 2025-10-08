@@ -6,6 +6,7 @@ import Introduction from './components/Introduction/Introduction';
 import Education from './components/Education/Education';
 import Personal from './components/Personal/Personal';
 import Contact from './components/Contact/Contact';
+import Professional_E from './components/Professional/Professional_E';
 
 function App() {
   const scrollRef = useRef(null);
@@ -42,7 +43,8 @@ function App() {
       <div className="scroll-container" ref={scrollRef}>
         <section ref={el => sectionRefs.current[0] = el}><Landing /></section>
         <section ref={el => sectionRefs.current[1] = el}><Introduction /></section>
-        <section ref={el => sectionRefs.current[2] = el}><Education /></section>
+        <section ref={el => sectionRefs.current[2] = el}><Professional_E /></section>
+        <section ref={el => sectionRefs.current[3] = el}><Education /></section>
         <section ref={el => sectionRefs.current[4] = el}><Personal /></section>
         <section ref={el => sectionRefs.current[5] = el}><Contact /></section>
       </div>
