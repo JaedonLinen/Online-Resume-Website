@@ -1,5 +1,6 @@
 import React from 'react'
 import './Frameworks.css'
+import { RiErrorWarningLine } from "react-icons/ri";
 import react from '../../../assets/React-icon.svg.png';
 import python from '../../../assets/Python.png';
 import postgres from '../../../assets/Postgresql.png';
@@ -22,12 +23,18 @@ import powerbi from '../../../assets/Power_BI_Logo.svg';
 import powerapps from '../../../assets/power-apps.png';
 import sql from '../../../assets/sql.png';
 import tableau from '../../../assets/Tableau-Symbol.png';
+import redshift from '../../../assets/redshift.png';
+import ado from '../../../assets/ado.png';
+import apex from '../../../assets/apex.jpg';
 
 function Frameworks() {
   return (
     <div className='Frameworks'>
         <div className="pro-title">
             <p className="pro-title-text">Frameworks & Skills</p>
+        </div>
+        <div className="frameworks-help-text">
+            <p><span><RiErrorWarningLine /></span>Experienced in applying all of these tools in personal and/or real-world, professional settings.</p>
         </div>
         <div className="Framework-rows-container">
           <div className="framework-row one">
@@ -96,6 +103,10 @@ function Frameworks() {
                   <h6 className='bit-text'>AWS Aurora</h6>
               </div>
               <div className="bit">
+                  <img src={redshift} alt="" className='bit-logo'/>
+                  <h6 className='bit-text'>AWS Redshift</h6>
+              </div>
+              <div className="bit">
                   <img src={glue} alt="" className='bit-logo'/>
                   <h6 className='bit-text'>AWS Glue</h6>
               </div>
@@ -126,6 +137,14 @@ function Frameworks() {
               <div className="bit">
                   <img src={tableau} alt="" className='bit-logo'/>
                   <h6 className='bit-text'>Tableau</h6>
+              </div>
+              <div className="bit">
+                  <img src={ado} alt="" className='bit-logo'/>
+                  <h6 className='bit-text'>Azure Dev Ops</h6>
+              </div>
+              <div className="bit">
+                  <img src={apex} alt="" className='bit-logo'/>
+                  <h6 className='bit-text'>Oracle Apex</h6>
               </div>
             </div>
             <div className="f-row-title-con"><p className="f-row-title"><span>Applications</span></p></div>

@@ -18,7 +18,6 @@
 .left-work-content{
     height: 100%;
     width: 30%;
-    background-color: var(--color-background);
     display: flex;
     flex-direction: column;
     justify-content: center;

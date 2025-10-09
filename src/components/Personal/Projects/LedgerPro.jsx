@@ -19,7 +19,14 @@ function LedgerPro() {
         </div>
         <div className="project-content">
             <div className="project-visuals">
-                <img src={grad} alt="" />
+                <iframe
+                    src="https://www.youtube.com/embed/sGBlwe0JrQs"
+                    title="YouTube video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                />
             </div>
             <div className="project-desc">
                 <div className="project-desc-text-container">
