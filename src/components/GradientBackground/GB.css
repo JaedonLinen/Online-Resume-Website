@@ -27,7 +27,7 @@
     height: 100%;
     inset: 0;
     margin: auto;
-    background: conic-gradient(from 0deg, var(--color-accent), var(--color-primary), var(--color-background), var(--color-background-faded), var(--color-accent), var(--color-primary), var(--color-secondary));
+    background: conic-gradient(from 0deg, var(--color-accent), var(--color-primary), var(--color-background), var(--color-accent), var(--color-primary), var(--color-accent), var(--color-primary), var(--color-secondary), var(--color-background), var(--color-background-faded), var(--color-accent), var(--color-primary), var(--color-secondary));
     animation: spinBlob 6s linear infinite;
 }
 

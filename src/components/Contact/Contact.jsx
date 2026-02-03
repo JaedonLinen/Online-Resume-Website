@@ -27,7 +27,7 @@ function Contact() {
             <FaGithub />
           </a>
           <div className="icon-resume-wrapper">
-            <a href="/IMP-Resume(07_02_25).pdf" target="_blank" rel="noopener noreferrer" className="clickable-icon">
+            <a href="/E-Jaedon-Linen-Resume.pdf" target="_blank" rel="noopener noreferrer" className="clickable-icon">
               <FaFileDownload />
             </a>
             <div className="resume">
