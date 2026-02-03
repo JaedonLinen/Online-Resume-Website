@@ -1,0 +1,131 @@
+.Framework-rows-container{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: calc(100vh - 200px);
+    width: 100vw;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.frameworks-help-text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.frameworks-help-text p{
+    color: rgb(174, 174, 174);
+    background-color: var(--color-background-faded);
+    border-radius: 5px;
+    padding: 7px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+    font-size: 0.8rem;
+}
+.frameworks-help-text p span{
+    padding-right: 5px;
+}
+.framework-row{
+    width: 92vw;
+    height: 32.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.framework-row.one, .framework-row.two{
+    border-bottom: 1px solid var(--color-accent);
+}
+.framework-row.one{
+    animation: in-right 1s ease-out forwards;
+}
+.framework-row.two{
+    opacity: 0;
+    animation: in-left 1s ease-out forwards;
+    animation-delay: 1s;
+}
+.framework-row.three{
+    opacity: 0;
+    animation: in-right 1s ease-out forwards;
+    animation-delay: 2s;
+}
+.f-row-title-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98%;
+    width: 20%;
+}
+.f-row-desc-con{
+    height: 98%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.f-row-title{
+    text-align: center;
+    color: var(--color-text);
+    font-size: 1.7rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+.f-row-title span{
+    font-size: 2.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+.bit{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bit-logo{
+    margin: 0;
+    width: 35px;
+}
+.bit span .bit-logo{
+    margin: 0;
+    width: 55px;
+}
+.bit-text{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@keyframes in-right {
+    0%{
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes in-left {
+    0%{
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

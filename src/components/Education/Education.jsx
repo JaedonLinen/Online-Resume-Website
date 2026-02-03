@@ -1,52 +1,43 @@
 import React, { useState } from 'react';
 import './Education.css'
+import Edu from './Education-section/Edu';
+import Certs from './Certifications-section/Certs';
+import Frameworks from './Frameworks-section/Frameworks';
 
 function Education() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const sections = [
+    <Edu key="edu" />,
+    <Certs key="certs" />,
+    <Frameworks key="frameworks" />
+  ];
+
+  const handleSwitch = (index) => {
+    if (index === activeIndex) return; // ignore if same or already switching
+      setActiveIndex(index);
+      setIsSwitching(false);
+  };
 
   return (
-    <div className='professional-section'>
-        <div className="pro-title">
-          <p className="pro-title-text">Professional Experience</p>
+    <div className='Education-section-container'>
+      <div className="education-sections">
+        {sections[activeIndex]}
+      </div>
+
+      <div className="education-slider">
+        <div className="slider-container">
+          {sections.map((_, index) => (
+            <div
+              key={index}
+              className={`slider-circle ${activeIndex === index ? "active" : ""}`}
+              onClick={() => handleSwitch(index)}
+            ></div>
+          ))}
         </div>
-        <div className="e-img-con">
-          <div className="pic">
-            <div className="e-img"></div>
-            <div className="e-img-text">
-              <p className='e-img-text-main'>Kennesaw State University</p>
-              <p className='e-img-text-sub'>2021 - 2025</p>
-            </div>
-          </div>
-          <div className="pic">
-            <div className="e-img"></div>
-            <div className="e-img-text">
-              <p className='e-img-text-main'>Republic National Disributing Company Internship</p>
-              <p className='e-img-text-sub'>May 2023 - Aug 2023</p>
-            </div>
-          </div>
-          <div className="pic">
-            <div className="e-img"></div>
-            <div className="e-img-text">
-              <p className='e-img-text-main'>Smurfit Westrock Internship/Co-op</p>
-              <p className='e-img-text-sub'>May 2024 - Aug 2025</p>
-            </div>
-          </div>
-          <div className="pic">
-            <div className="e-img"></div>
-            <div className="e-img-text">
-              <p className='e-img-text-main'>AWS Certified Data Engineer - Associate Certification</p>
-              <p className='e-img-text-sub'>Sept. 2025</p>
-            </div>
-          </div>
-          <div className="pic">
-            <div className="e-img"></div>
-            <div className="e-img-text">
-              <p className='e-img-text-main'>Network Engineer - AT&T Technology Development Program</p>
-              <p className='e-img-text-sub'>Starts July 2026</p>
-            </div>
-          </div>
-        </div>
+      </div>
     </div>
   )
 }
 
-export default Education
+export default Education;
